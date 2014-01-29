@@ -1,0 +1,6 @@
+server/config/config.js
+node_modules
+*~
+*.log
+client/scripts/aio/*.js
+
