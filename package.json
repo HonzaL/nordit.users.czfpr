@@ -19,7 +19,8 @@
 	"nconfig": "git://github.com/HonzaL/nconfig.git",
 	"ncontract": "git://github.com/HonzaL/ncontract.git",
 	"nauth": "git://github.com/HonzaL/nauth.git",
-	"nalarms": "git://github.com/HonzaL/nalarms.git"
+	"nalarms": "git://github.com/HonzaL/nalarms.git",
+	"nringc": "git://github.com/HonzaL/nringc.git"
     },
     "devDependencies": {
 	"grunt": "~0.4.1",

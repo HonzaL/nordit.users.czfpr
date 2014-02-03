@@ -8,8 +8,8 @@ CZFPR.Router.map(function() {
 	  this.route('graph');
 	  this.route('graphHires');
 	  this.route('alarms');
-	    this.route('denniSpotreby');
-	    this.route('download');
+	  this.route('denniSpotreby');
+	  this.route('download');
 	});
       });
     });
@@ -31,8 +31,11 @@ CZFPR.CzfprMainView = CZFPR.RootView.extend({baseTemplateName: 'index/main'});
 CZFPR.CzfprGraphView = CZFPR.RootView.extend({baseTemplateName: 'index/graph'});
 CZFPR.CzfprGraphHiresView = CZFPR.RootView.extend({baseTemplateName: 'index/graphHires'});
 
+// Filtry
+CZFPR.MonthYearFilterView = CZFPR.RootView.extend({baseTemplateName: 'filter/monthYear'});
+
 // Pohledy do ControlWebu
-CZFPR.CzfprDenniSpotrebyView = CZFPR.RootView.extend({baseTemplateName: '/cw/eu/10420_Lomna/DCBP_SpotrLinek_00_CZFPR_u2.htm'});
+CZFPR.CzfprDenniSpotrebyView = CZFPR.DataDrivenTableView.extend({filterView: CZFPR.MonthYearFilterView});
 CZFPR.CzfprDownloadView = CZFPR.RootView.extend({baseTemplateName: '/cw/eu/10420_Lomna/lomna_download_DCBP_u2.htm'});
 
 // Pohledy odvozene od globalnich pohledu

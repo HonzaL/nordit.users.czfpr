@@ -1,0 +1,13 @@
+
+<div style="border: 2px solid #383838; border-radius:15px;padding: 10px;background-color: #d8d8d8;">
+  <div style="float: left; padding-right: 15px;border-right: 1px solid;">
+    <div style="display: inline-block; width: 80px; text-align: right;">month:</div>
+    <div style="display: inline-block;">{{input value=month size="3" class="ta-right"}}</div>
+    <input type="button" value="-" {{action "changeMonth" -1}} style="width:23px;">
+    <input type="button" value="+" {{action "changeMonth" 1}} style="width:23px;"><br>
+    <div style="display: inline-block; width: 80px; text-align: right;">year:</div>
+    <div style="display: inline-block;">{{input value=year size="3" class="ta-right"}}</div>
+    <input type="button" value="ok" {{action filter}} style="width:50px;">
+  </div>
+  <div style="clear:left;"></div>
+</div>
