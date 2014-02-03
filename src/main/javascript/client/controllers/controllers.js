@@ -24,3 +24,4 @@ CZFPR.CzfprDenniSpotrebyController = CZFPR.DataDrivenTableController.extend({
 
 // Controllery odvozene od globalnich controlleru
 CZFPR.CzfprAlarmsController = NU.AlarmsController.extend({contract: 'czfpr'});
+CZFPR.CzfprOverviewController = NU.SchemaController.extend({schemaUrl: 'http://users.nordit.cz/eu/10420_Lomna/__pic_sch_overview_CZFPR_DCBP__'});
